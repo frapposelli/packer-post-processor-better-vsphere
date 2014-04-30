@@ -1,6 +1,6 @@
 # packer-post-processor-better-vsphere
 
-This packer plugin is a dirty hack using @mitchellh code and leverages [VMware OVF Tool](http://www.vmware.com/support/developer/ovf) to upload a packer output to vSphere expanding {{ .BuildName }} variable in order to make it suitable for multi-builder packer files.
+This packer plugin is a dirty hack using [@mitchellh](https://github.com/mitchellh/packer) code and leverages [VMware OVF Tool](http://www.vmware.com/support/developer/ovf) to upload a packer output to vSphere expanding {{ .BuildName }} variable in order to make it suitable for multi-builder packer files.
 
 
 ## Prerequisites
@@ -14,6 +14,8 @@ Notes:
   * This post processor only works with VMware
 
 ## Installation
+
+Pull the repository and compile the code with ```go build``` or [grab a precompiled version for your platform](https://github.com/frapposelli/packer-post-processor-better-vsphere/releases/tag/v0.1).
 
 Add
 
